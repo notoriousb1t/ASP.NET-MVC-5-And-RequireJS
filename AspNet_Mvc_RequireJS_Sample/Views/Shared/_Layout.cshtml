@@ -1,0 +1,15 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title - ASP.NET MVC RequireJS Example</title>
+</head>
+<body>
+    @RenderBody()
+    <script type="text/javascript" 
+            src="@Url.Content("~/Scripts/lib/require.min.js")" 
+            data-main="@Url.Content("~/Scripts/config.js")"
+            data-path="@Url.Content("~/")"
+            data-module="@ViewBag.Module">
+    </script>
+</body>
+</html>
